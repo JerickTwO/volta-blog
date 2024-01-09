@@ -1,0 +1,51 @@
+---
+layout: ../layouts/MarkdownLayout.astro
+title: Instalando Astro manualmente
+---
+
+import { Icon } from 'astro-icon'
+import { Notification } from 'accessible-astro-components'
+
+# Instalando Astro
+
+<Notification type="info">
+  <Icon pack="ion" name="information-circle-outline" />
+  <p>
+    <strong>Info:</strong> Esta página muestra todos los pasos que debe seguir para instalar Astro de manera local
+  </p>
+</Notification>
+
+En esta guía, aprenderás a instalar Astro, un marco de desarrollo para la creación de sitios web modernos.
+
+### Prerrequisitos
+```python
+- Node.js v18.14.1 o mayor. Puedes descargarlo desde [https://nodejs.org/](https://nodejs.org/).
+- Visual Studio Code con la extension de Astro
+- Terminal/Astro es usado a través de la interfaz de linea de comando
+```
+1.- Como primer paso debemos instalar Astro en nuestra computadora con el siguiente comando:
+```bash
+npm create astro@latest
+```
+### Instalación
+Si prefieres no usar el asistente de instalación automático create astro, puedes instalar y configurar Astro manualmente siguiendo las instrucciones a continuación:
+
+
+## 1.- Crea una carpeta donde guardar todos los archivos
+
+Crea una carpeta vacía con el nombre de tu proyecto y navega hacia ella.
+
+```bash
+mkdir my-astro project
+cd my-astro-project
+```
+Ya en la carpeta, crea un archivo pckage.json para tu proyecto. Esto te ayudara a gestionar las dependencias del proyecto, incluyendo Astro. Si no estas familiarizado con este formato de archivo, ejecuta el siguiente comando para crear uno.
+ 
+```bash
+npm -> npm init --yes
+pnpm -> pnpm init
+Yarn -> yarn init --yes
+```
+
+## 2.- Instala Astro
+Primero, instala Astro dentro de tu proyecto.
